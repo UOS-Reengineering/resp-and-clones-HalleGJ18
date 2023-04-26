@@ -32,4 +32,12 @@ public class Branch {
         this.telephone = telephone;
     }
 
+    public void changeOpeningTime(String openingTime) {
+        this.setOpeningTime(openingTime);
+    }
+
+    public void registerTelephone(String telephone) {
+        this.setTelephone(telephone);
+    }
+
 }

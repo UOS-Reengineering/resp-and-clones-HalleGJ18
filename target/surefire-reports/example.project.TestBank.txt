@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: example.project.TestBank
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.068 s <<< FAILURE! - in example.project.TestBank
+testBank_new  Time elapsed: 0.057 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <02> but was: <example.project.GodClassExample.PaySchedule@6b19b79>
+	at example.project.TestBank.testBank_new(TestBank.java:90)
+

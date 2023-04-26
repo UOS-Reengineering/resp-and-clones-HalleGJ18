@@ -57,7 +57,7 @@ public class TestBank {
 
     @Test
     public void testBank_new() {
-        fail();
+//        fail();
         
         /*
         After the refactoring of `Bank` class, delete the above line and uncomment the lines below.
@@ -65,40 +65,40 @@ public class TestBank {
         In other words, this test case gives you hints on how to refactor the `Bank` class.
          */
 
-//        Bank bank = new Bank();
-//        Branch branch = new Branch("Branch 1", "9:00", "123456789");
-//        BankAccount account = new BankAccount("John", "123456789", 1000, 0.1);
-//        Customer customer = new Customer("John", "111111111");
-//
-//        bank.setUpBranch(branch);
-//        assertEquals(1, bank.getBranches().size());
-//
-//        branch.changeOpeningTime("10:00");
-//        assertEquals("10:00", branch.getOpeningTime());
-//
-//        branch.registerTelephone("987654321");
-//        assertEquals("987654321", branch.getTelephone());
-//
-//        bank.setUpNewAccount(account, customer);
-//        assertEquals(1, bank.getAccounts().size());
-//        assertEquals(1, bank.getCustomers().size());
-//
-//        double balance = account.obtainBalance();
-//        assertEquals(1000, balance);
-//
-//        bank.changePayrollProcessingDate("02", "admin");
-//        assertEquals("02", bank.getPayrollProcessingDate("admin"));
-//
-//        account.addInterest();
-//        assertEquals(1100, account.getBalance());
-//
-//        bank.closeAccount(account);
-//        assertEquals(0, bank.getAccounts().size());
-//        assertEquals(0, account.getBalance());
-//
-//        bank.closeBranch(branch);
-//        assertEquals(0, bank.getBranches().size());
-//        assertEquals("null", branch.getOpeningTime());
+        Bank bank = new Bank();
+        Branch branch = new Branch("Branch 1", "9:00", "123456789");
+        BankAccount account = new BankAccount("John", "123456789", 1000, 0.1);
+        Customer customer = new Customer("John", "111111111");
+
+        bank.setUpBranch(branch);
+        assertEquals(1, bank.getBranches().size());
+
+        branch.changeOpeningTime("10:00");
+        assertEquals("10:00", branch.getOpeningTime());
+
+        branch.registerTelephone("987654321");
+        assertEquals("987654321", branch.getTelephone());
+
+        bank.setUpNewAccount(account, customer);
+        assertEquals(1, bank.getAccounts().size());
+        assertEquals(1, bank.getCustomers().size());
+
+        double balance = account.obtainBalance();
+        assertEquals(1000, balance);
+
+        bank.changePayrollProcessingDate("02", "admin");
+        assertEquals("02", bank.getPayrollProcessingDate("admin"));
+
+        account.addInterest();
+        assertEquals(1100, account.getBalance());
+
+        bank.closeAccount(account);
+        assertEquals(0, bank.getAccounts().size());
+        assertEquals(0, account.getBalance());
+
+        bank.closeBranch(branch);
+        assertEquals(0, bank.getBranches().size());
+        assertEquals("null", branch.getOpeningTime());
     }
 
 

@@ -87,7 +87,11 @@ public class Bank {
 
     // TODO: remove navigation code
     public void changePayrollProcessingDate(String date, String staffCategory) {
-        payroll.getStaffCategoryPaySchedule(staffCategory).payDay = date; // TODO: remove this navigation code
+        payroll.getStaffCategoryPaySchedule(staffCategory).setPayDay(date); // TODO: remove this navigation code
+    }
+
+    public String getPayrollProcessingDate(String staffCategory) {
+        return payroll.getStaffCategoryPaySchedule(staffCategory).getPayDay();
     }
 
 }
