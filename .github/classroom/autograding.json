@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "TestExtractMethods",
+      "setup": "",
+      "run": "mvn test -Dtest=TestExtractMethods",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestDelegateMethods",
+      "setup": "",
+      "run": "mvn test -Dtest=TestDelegateMethods",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestBank",
+      "setup": "",
+      "run": "mvn test -Dtest=TestBank#testBank_new",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestJaccardSimilarity",
+      "setup": "",
+      "run": "mvn test -Dtest=TestJaccardSimilarity",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TestDotPlot",
+      "setup": "",
+      "run": "mvn test -Dtest=TestDotPlot",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    }
+  ]
+}
